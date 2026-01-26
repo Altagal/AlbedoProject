@@ -1,0 +1,9 @@
+nome: Armadura de Couro
+tipo: Armadura
+raridade: Comum
+propriedades: [1 mão]
+descricao:
+efeitos:
+   - nome: 
+     descricao: Reduz o dano perfurante, cortante e contundente sofrido em 2.
+sabor: 

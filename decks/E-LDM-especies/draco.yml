@@ -1,0 +1,13 @@
+nome: Draco
+tipos: [Humanoide, Réptil]
+subtipos: [Dragão]
+tamanhos: [Médio]
+descricao:
+  Humanoide, características de dragão ou lagarto, pele escamada, cabeça
+  de réptil
+pv: 8
+movimentacao: 5
+tracos_raciais: 
+  - nome: "Resistência a Calor"
+    descricao: Recebe metade de dano Ígneo.
+linguagens: []

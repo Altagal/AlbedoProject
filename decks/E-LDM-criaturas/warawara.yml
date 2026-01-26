@@ -1,0 +1,23 @@
+nome: Warawara
+tipo: Etéreo
+subtipo: []
+tamanhos: [Minúsculo]
+ilustracao: LDM/warawara-1.jpg
+descricao: Os Warawara são criaturas que habitam as florestas densas e úmidas.
+acoes: []
+atributos:
+  Agilidade: 3
+  Corpo: 1
+  Força: 1
+  Inteligência: 2
+  Presença: 2
+  Sentido: 3
+desvantagens: []
+especie: Warawara
+tracos_raciais: [Voo/Levitação]
+itens: []
+movimentacao: 6
+pericias: [Furtividade, Sobrevivência, Atletismo]
+resistencias: []
+vida: 8
+sabor:

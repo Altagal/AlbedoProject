@@ -1,0 +1,16 @@
+nome: Besta
+tipo: Besta
+raridade: Comum
+propriedades: [1 mão]
+descricao:
+efeitos:
+acoes:
+  - nome: Carregar Dardo
+    custos: [◆◆◆, 1 Dardo]
+    alcance: 
+    descricao: Carregue o dardo na besta. Seu dardo se torna um Dardo Carregado. So pode haver um dardo carregado por besta.
+  - nome: Atacar
+    custos: [◆◆◆, 1 Dardo Carregado]
+    alcance: 60 metros
+    descricao: Cause 7 de dano Perfurante.
+sabor: 

@@ -1,0 +1,11 @@
+nome: Solidão
+tipos: [Etéreo]
+subtipos: [Aspecto]
+tamanhos: [Gigante]
+linguagens: []
+movimentacao: 6
+ilustracao: LDM/solidao-1.jpg
+descricao: Só torna forma quando distante 500m de 2 criaturas ou mais.
+acoes: [Invisibilidade]
+tracos_raciais: [Voo/Levitação]
+sabor:

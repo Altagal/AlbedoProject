@@ -1,0 +1,15 @@
+nome: Sutileza
+tipos: [Elemental, Etéreo]
+subtipos: [Aspecto]
+tamanhos: [Gigante]
+ilustracao: LDM/sutileza-1.jpg
+descricao: 
+linguagens: []
+movimentacao: 6
+acoes:  
+  - nome: Forma da Água
+    descricao: <p>Jogue um d6, essa criatura recebe os seguintes beneficios:</p>
+tracos_raciais: 
+  - nome: Voo/Levitação
+    descricao: 
+sabor:

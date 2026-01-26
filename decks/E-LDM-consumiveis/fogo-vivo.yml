@@ -1,0 +1,14 @@
+nome: Fogo Vivo
+tipo: Consumível
+raridade: Comum
+descricao: Um frasco de vidro espesso contendo um liquido verde opaco florescente de
+  cheiro forte.
+acoes:
+- alcance: 30 metros
+  custos:
+  - ◆◆
+  descricao: O frasco se rompe e explode ao contato. A um raio de 10 metros do ponto
+    de impacto criaturas sofrem 10 de dano Ígneo e objetos inflamáveis são incendiados.
+  nome: Arremessar
+propriedade: []
+sabor: '"Antes de arremessar o frasco você consegue sentir ele vibrando de felicidade."'

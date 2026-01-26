@@ -1,0 +1,10 @@
+nome: Poção de Cura
+tipo: Consumível
+raridade: Comum
+descricao: ''
+acoes:
+- custos:
+  - ◆◆
+  descricao: Recupere 5 Pontos de Vida
+  nome: Consumir
+propriedade: []

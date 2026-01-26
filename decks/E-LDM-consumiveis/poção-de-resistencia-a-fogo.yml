@@ -1,0 +1,10 @@
+nome: Poção de Resistência a Fogo
+tipo: Consumível
+raridade: Comum
+descricao: ''
+acoes:
+- custos:
+  - ◆◆
+  descricao: Receba Resistência a Fogo por 1 hora.
+  nome: Consumir
+propriedade: []

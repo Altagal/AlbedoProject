@@ -1,0 +1,1588 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Elysium - Livro do Mundo</title>
+    
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    
+    
+    <link href="./static/css/icons.css" rel="stylesheet" />
+    <link href="./static/css/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./static/img/favicon.ico " />
+    <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body data-bs-theme="light">
+    <div class="container dont-print">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Sistema Elysium</span>
+      </a>
+    </header>
+  </div>
+    
+<div class="index-div">
+    <div class="floating-div dont-print">
+        <button class="btn btn-secondary btn-scroll" data-target="#inicio">Inicio</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#jogando-o-jogo">Jogando o Jogo</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#história">História</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#personagens-e-criaturas">Personagens e Criaturas</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#especies">Espécies</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#individualidades">Individualidades</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#atributos-e-pericias">Atributos e Perícias</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#teste-de-pericia">Teste de Perícia</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#acoes">Ações</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#combate">Combate</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#equipamentos">Equipamentos</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#glifos">Glifos</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#materiais">Materiais</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#habilidades">Habilidades</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#faccoes">Facções</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#criaturas">Criaturas</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#linguas">Línguas</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#tipos-de-dano">Tipos de Dano</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#resistencias-e-imunidades">Resistências e Imunidades</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#condicoes">Condições</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#feiticos">Feitiços</button>
+        <button class="btn btn-secondary btn-scroll" data-target="#fim">Fim</button>
+        <button class="btn btn-secondary btn-scroll" onclick="window.print()"><i class="icon-printer"></i>Imprimir</button>
+    </div>
+</div>
+<main class="book mx-auto">
+    <h1 class="text-center mt-4" id="inicio">Elysium</h1>
+    <h5 class="text-center mt-4">Livro do Mundo</h5>
+    
+    
+    <div class="text-center mt-4">
+        <img alt="Logotipo Palácio Caravana Livro Base" src="./static/img/logo-livro-base.png"
+            style="max-width:10cm;max-height:10cm;width:auto;height:auto">
+    </div>
+    <h5 class="text-center mt-4">Gustavo Jordão</h5>
+    <h6 class="text-center mt-4">Sistema Elysium</h6>
+    <h6 class="text-center mt-1">v1.0.0.alfa</h6>
+    <h2 id="creditos" class="pt-2">Créditos</h2>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <ul>
+                <li>Desenvolvedores de Regras: Gustavo Jordão</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li>Ilustração de Capa: Gabriel Jordão</li>
+                <li>Ilustradores do Livro:</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <h2 id="jogando-o-jogo" class="mt-2">Jogando o Jogo</h2>
+    <hr>
+    <p>Para jogar o Sistema Elysium, você precisará de alguns itens e informações essenciais:</p>
+    <ul>
+        <li><b>Livro de Regras:</b> Este livro contém as regras principais para jogar, criar
+            personagens, conduzir a história e realizar combates.</li>
+        <li><b>Dados:</b> Um conjunto de dados (d2 <i class="icon-d2"></i>, d4 <i class="icon-d4"></i>, d6 <i
+                class="icon-d6"></i>, d8 <i class="icon-d8"></i>, d10 <i class="icon-d10"></i>, d12 <i
+                class="icon-d12"></i> e
+            d20 <i class="icon-d20"></i>), para a realização dos Testes e Ações dos
+            personagens.</li>
+        <li><b>Fichas de Personagem:</b> Impressas ou digitais. Para registrar atributos, perícias,
+            habilidades, equipamentos e anotações importantes dos personagens.</li>
+        <li><b>Lápis e Borracha:</b> Para anotar e atualizar informações durante o jogo.</li>
+        <li><b>Jogadores:</b> Um grupo de participantes, sendo um deles o Narrador, responsável por
+            descrever ambiente onde a história ocorre, interpretar personagens não jogadores e arbitrar as
+            regras.</li>
+        <li><b>Imaginação e Vontade de se divertir:</b> O mais importante é a disposição para criar
+            histórias, interpretar personagens e viver aventuras únicas.</li>
+    </ul>
+    <h3>O Narrador</h3>
+    <p>O papel do Narrador ao jogar o Sistema Elysium é conduzir a história, descrever cenários, interpretar os
+        personagens que vão aparecer na história dos jogadores e arbitrar as regras do jogo. Cabe ao Narrador
+        criar desafios, apresentar situações inesperadas, controlar o ritmo da narrativa e garantir que todos os
+        jogadores tenham oportunidades de participar e se divertir. O Narrador deve ser imparcial, flexível e
+        criativo, adaptando-se às escolhas dos jogadores e promovendo uma experiência envolvente e colaborativa
+        para o grupo.</p>
+    <h3>O Jogador</h3>
+    <p>O papel do jogador é criar e interpretar um personagem dentro do universo do jogo. Cada jogador
+        toma decisões, descreve ações e reage aos desafios apresentados pelo Narrador, buscando atingir
+        objetivos pessoais e coletivos. O jogador deve contribuir para a narrativa e
+        respeitar as regras estabelecidas, utilizando criatividade e interpretação para dar vida ao seu
+        personagem e enriquecer a experiência de todos na mesa.</p>
+
+
+    <h2 id="história" class="mt-2">História</h2>
+    <hr>
+    <img alt="Logotipo Palácio Caravana Livro Base" src="./static/img/LDM/mapa.png" style="width:100%;">
+    <h5>Elysium, Plano Material</h5>
+    <p>Elysium é o plano material onde a maior parte das aventuras acontecem. Um mundo vasto e diversificado, repleto de
+        diferentes regiões, culturas e criaturas. Desde as planícies abertas até as densas florestas, passando por
+        desertos áridos e montanhas imponentes, Elysium oferece uma infinidade de ambientes para explorar e
+        descobrir.</p>
+    <ul>
+        <li>Planices</li>
+        <li>Floresta, com bestas como javalis, cobras, e arvores frutiferas</li>
+        <li>Pantano, com homens peixes, pessoas mortas no fundo do pantano, Pequena vila</li>
+        <li>Floresta no pantano, com casa de bruxas</li>
+        <li>Floresta Negra, com a clareira dos animais falantes no centro, com um portal para o plano das fadas</li>
+        <li>Lugar Gelado ao Norte onde fica a Floresta Negra</li>
+        <li>Praias, que sao caminhos para a Cidade no fundo do mar</li>
+        <li>Deserto com mumias, piramides, esfinges e oasis.</li>
+        <li>Savana com Elefantes, Leoes e Hienas.</li>
+        <li>Grande Lago, com sereias</li>
+        <li>Pequenos Lagos, com tesouros em seu fundo</li>
+        <li>Montanhas, com anoes, minas e minerios preciosos, tesouros enterrados, perigos no fundo da montanha</li>
+        <li>Gelo no topo das Montanhas, </li>
+        <li>Vulcões acima do gelo no topo das Montanhas, com um dragao acestral</li>
+        <li>Paredao de Montanhas</li>
+        <li>Norte Gelado</li>
+        <li>Depois do Norte é a Beira do Mundo</li>
+        <li>Grandes Castelos com muralhas, com comercio, plantações a sua volta, palacios no centro</li>
+    
+    </ul>
+
+
+    <h2 id="personagens-e-criaturas" class="mt-2">Personagens e Criaturas</h2>
+    <hr>
+    <h3>Criando um Personagem</h3>
+    <p>Criaturas, criadas pelo jogador e pelo narrador, possuem em sua ficha: espécie, individualidades e habilidades.</p>
+    <p> Ao criar um personagem, siga os passos abaixo:</p>
+    <ol>
+        <li><b>Escolha a Espécie:</b> A espécie contribui para a aparência e traços inatos ao personagem. Tambem pode ajudar a construir o passado do personagem, mas nao limite sua histia a isso.    </li>
+        <li><b>Escolha as Individualidades:</b> As individualidades trazem originalidade ao personagem criando
+            combinações únicas, elas definem a trajetória do personagem ate o presente. Cultura de origem, Profissão,
+            características físicas, boas e ruins.</li>
+        <li><b>Distribua as Perícias:</b> Pontos de pericia definem a forma atual do personagem e sua força
+            para lidar com testes de desafios e embates.</li>
+        <li><b>Descreva o Personagem:</b> Crie uma breve história, descreva a aparência, personalidade e
+            motivações para dar vida e profundidade ao personagem baseado nas escolhas anteriores.</li>
+    </ol>
+    <p>Após o personagem estar pronto, você pode ele:
+    <ul>
+        <li><b>Equipar:</b> Escolha armas, ferramentas, equipamentos.</li>
+        <li><b>Aprender:</b> Assim como ferramentas, feitiços tem sua utilidade e podem ser usados para
+            atacar, defender ou resolver problemas durante a aventura.</li>
+    </ul>
+    <p>Com esses passos, seu personagem estará pronto para embarcar em aventuras no mundo de Palácio Caravana!</p>
+    
+    <h3 id="especies">Espécie</h3>
+    <p>A espécie define os traços inatos de uma criatura. A escolha da espécie influencia a aparência, capacidades
+        físicas e mentais, bem como a interação com o ambiente e outras criaturas.</p>
+    <p>Cada espécie possui um <b>Tipo</b>. O tipo permite interações com o sistema, certas magias e efeitos. Além disso,
+        algumas espécies possuem <b>Subtipos</b>, que representam variações dentro do tipo principal.</p>
+    <p>O <b>Tamanho</b> indica as dimensões físicas da criatura, influenciando sua movimentação, interação com o
+        ambiente e
+        efeitos de habilidades ou magias.</p>
+    <p>Essas informações são essenciais para determinar vantagens, desvantagens e regras específicas aplicáveis a cada
+        espécie durante o jogo.</p>
+    <div class="row">
+        <div class="col">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bestial</td>
+                        <td>Criaturas peludas e com dentes proeminentes.</td>
+                    </tr>
+                    <tr>
+                        <td>Constructo</td>
+                        <td>Entidades artificiais compostos por matéria inorgânica, geralmente metais, pedras ou
+                            madeira.</td>
+                    </tr>
+                    <tr>
+                        <td>Elemental</td>
+                        <td>Seres formados por elementos naturais.</td>
+                    </tr>
+                    <tr>
+                        <td>Etéreo</td>
+                        <td>Entidades incorpóreas ou sobrenaturais.</td>
+                    </tr>
+                    <tr>
+                        <td>Humanoide</td>
+                        <td>Criaturas com forma humana ou similar.</td>
+                    </tr>
+                    <tr>
+                        <td>Insetoide</td>
+                        <td>Criaturas de anatomia insetoide.</td>
+                    </tr>
+                    <tr>
+                        <td>Parasita</td>
+                        <td>Criaturas que dependem de outros seres para sobreviver.</td>
+                    </tr>
+                    <tr>
+                        <td>Réptil</td>
+                        <td>Seres de natureza reptiliana.</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetal</td>
+                        <td>Seres compostos por matéria vegetal.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Tamanho</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Minúsculo</td>
+                        <td><p>Criaturas extremamente pequenas, como insetos ou pequenos roedores.</p><p>Pode ocupar o espaço ocupar outra criatura de tamanho medio ou maior.</p></td>
+                    </tr>
+                    <tr>
+                        <td>Pequeno</td>
+                        <td><p>Criaturas menores que um humano adulto, como crianças, cachorros e gatos.</p><p>Em combate ao se mover, pode atravessar um espaço ocupado por outra criatura media ou maior, mas nao pode terminar seu movimento no mesmo espaço.</p></td>
+                    </tr>
+                    <tr>
+                        <td>Médio</td>
+                        <td>Tamanho padrão de humanos e criaturas similares.</td>
+                    </tr>
+                    <tr>
+                        <td>Grande</td>
+                        <td>Criaturas maiores que humanos, como ursos, elefantes, ogros e .</td>
+                    </tr>
+                    <tr>
+                        <td>Gigante</td>
+                        <td>Criaturas enormes ou gigantes como dragões.</td>
+                    </tr>
+                    <tr>
+                        <td>Colossal</td>
+                        <td>Criaturas de proporções titânicas, como .</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4 class="mb-0">Anão</h4>
+            <p>Humanoide</p>
+            <p class="mb-0">Pequeno</p>
+            <p class="mb-0">PV: 8</p>
+            <p class="mb-0">Movimentação: 5m</p>
+            <p class="mb-0">Linguagens: Nuldul</p>
+            <p class="mt-2">Os anões são conhecidos por sua robustez.</p>
+            <p>Pele Grossa - Reduz em 2 o dano de ataques perfurantes e cortantes.</p>
+            
+            <h4 class="mb-0">Canis</h4>
+            <p>Humanoide - Animale</p>
+            <p class="mb-0">Médio</p>
+            <p class="mb-0">PV: 8</p>
+            <p class="mb-0">Movimentação: 5m</p>
+            
+            <p class="mt-2">Humanoide, características de cachorro, rabo peludo, orelhas caídas</p>
+            <p>Faro Aguçado - Recebe Vantagem em testes que envolvam o olfato.</p>
+            
+            <h4 class="mb-0">Draco</h4>
+            <p>Humanoide, Réptil - Dragão</p>
+            <p class="mb-0">Médio</p>
+            <p class="mb-0">PV: 8</p>
+            <p class="mb-0">Movimentação: 5m</p>
+            
+            <p class="mt-2">Humanoide, características de dragão ou lagarto, pele escamada, cabeça de réptil</p>
+            <p>Resistência a Calor - Recebe metade de dano Ígneo.</p>
+            
+            <h4 class="mb-0">Elfo</h4>
+            <p>Humanoide - Elfo</p>
+            <p class="mb-0">Médio</p>
+            <p class="mb-0">PV: 8</p>
+            <p class="mb-0">Movimentação: 5m</p>
+            <p class="mb-0">Linguagens: Brinmarin</p>
+            <p class="mt-2">Os elfos são conhecidos por sua beleza, longevidade e conexão com a natureza. Eles são habilidosos em magia e artesanato.</p>
+            
+            
+            <h4 class="mb-0">Felix</h4>
+            <p>Humanoide - Animale</p>
+            <p class="mb-0">Médio</p>
+            <p class="mb-0">PV: 8</p>
+            <p class="mb-0">Movimentação: 5m</p>
+            <p class="mb-0">Linguagens: Língua Secreta dos Gatos</p>
+            <p class="mt-2">Humanoide, cabeça de gato, corpo peludo, garras afiadas.</p>
+            <p>Visão Noturna - Esta criatura não sofre desvantagens em testes envolvendo visão para ver dentro de um raio de 30 metros.</p>
+            
+            <h4 class="mb-0">Goblin</h4>
+            <p>Humanoide - Goblinoide</p>
+            <p class="mb-0">Pequeno</p>
+            <p class="mb-0">PV: 8</p>
+            <p class="mb-0">Movimentação: 5m</p>
+            <p class="mb-0">Linguagens: Taka</p>
+            <p class="mt-2">Os goblins são criaturas pequenas, ágeis e astutas, conhecidas por sua natureza travessa e engenhosidade. Vivem em grupos e frequentemente habitam áreas subterrâneas ou florestas densas.</p>
+            
+            </div>
+            <div class="col">
+            
+            <h4 class="mb-0">Humano</h4>
+            <p>Humanoide</p>
+            <p class="mb-0">Pequeno ou Médio</p>
+            <p class="mb-0">PV: 8</p>
+            <p class="mb-0">Movimentação: 5m</p>
+            
+            <p class="mt-2">Os humanos são a espécie mais comum no plano de Elysium.</p>
+            
+            
+            <h4 class="mb-0">Orc</h4>
+            <p>Humanoide - Orc</p>
+            <p class="mb-0">Médio ou Grande</p>
+            <p class="mb-0">PV: 8</p>
+            <p class="mb-0">Movimentação: 5m</p>
+            <p class="mb-0">Linguagens: Moroar</p>
+            <p class="mt-2">Os orcs são conhecidos por sua força bruta, ferocidade em batalha e cultura tribal.</p>
+            
+            
+            <h4 class="mb-0">Replicante</h4>
+            <p>Humanoide, Constructo</p>
+            <p class="mb-0">Médio</p>
+            <p class="mb-0">PV: 0</p>
+            <p class="mb-0">Movimentação: 5m</p>
+            
+            <p class="mt-2">Os replicantes são seres artificiais. Eles possuem características humanoides, mas são feitos de materiais inorgânicos como ferro, pedra ou madeira.</p>
+            <p>Composição Rigida - Essa criatura possui Carapaça 16. Quando a Carapaça chegar a 0, a criatura fica Inconciente. Carapaça pode ser restaurada com o material compativel.</p>
+            
+            <h4 class="mb-0">Reptilia</h4>
+            <p>Humanoide, Réptil</p>
+            <p class="mb-0">Médio</p>
+            <p class="mb-0">PV: 8</p>
+            <p class="mb-0">Movimentação: 5m</p>
+            
+            <p class="mt-2">Humanoide, características de lagarto, pele escamada, cabeça de réptil</p>
+            <p>Folego - Pode segurar o folego por mais tempo.</p>
+            
+            <h4 class="mb-0">Taurus</h4>
+            <p>Humanoide - Animale</p>
+            <p class="mb-0">Médio ou Grande</p>
+            <p class="mb-0">PV: 8</p>
+            <p class="mb-0">Movimentação: 5m</p>
+            
+            <p class="mt-2">Humanoide, Chifres na cabeça, grande, forte</p>
+            
+            
+            <h4 class="mb-0">Vulpix</h4>
+            <p>Humanoide - Animale</p>
+            <p class="mb-0">Médio</p>
+            <p class="mb-0">PV: 8</p>
+            <p class="mb-0">Movimentação: 5m</p>
+            
+            <p class="mt-2">Humanoide, cabeça de raposa, rabo peludo</p>
+            
+            
+            
+        </div>
+    </div>
+    
+    <h3 id="individualidades">Individualidades</h3>
+    <p>Todo personagem possui traços únicos, características que o diferem dos outros. Seja alguma aptidão que possui
+        desde quando nasceu, seja uma mutação genética, um interesse em uma área muito especifica, um tique que o
+        atrapalha sua vida inteira, experiencias profissionais, costumes da terra natal, entre tantas outras. representa
+        a história e as experiências passadas do personagem, moldando suas habilidades, conhecimentos e personalidade.
+        Ele define o contexto social, cultural e profissional do personagem, influenciando suas motivações e objetivos
+        dentro da narrativa. Elas ajudam a construir a identidade única do personagem</p>
+    <div class="row">
+        <div class="col">
+            
+            <h4 class="mb-0">Artesão</h4>
+            <p>Profissão</p>
+            <p>artesão do clã.</p>
+            
+            <h4 class="mb-0">Atleta</h4>
+            <p>Antecedente</p>
+            <p>Aumenta a movimentação em +2.</p>
+            
+            <h4 class="mb-0">Bardo</h4>
+            <p>Profissão</p>
+            <p>O Bardo é um contador de histórias e músico talentoso. Ele usa sua arte para inspirar e entreter.</p>
+            
+            <h4 class="mb-0">Curandeiro</h4>
+            <p>Profissão</p>
+            <p>Especializado em curar ferimentos e doenças, o Curandeiro possui experiencia em preservar a vida.</p>
+            
+            <h4 class="mb-0">Estudioso</h4>
+            <p>Antecedente</p>
+            <p>O Estudioso é um amante do conhecimento, sempre em busca de aprender mais sobre o mundo.</p>
+            
+            <h4 class="mb-0">Explorador</h4>
+            <p>Profissão</p>
+            <p>O Explorador é um aventureiro nato, sempre em busca de novas terras e desafios. Ele é habilidoso em navegação e sobrevivência em ambientes selvagens.</p>
+            
+            <h4 class="mb-0">Fazendeiro</h4>
+            <p>Profissão</p>
+            <p>Criado em uma fazenda, o Fazendeiro é experiente em lidar com a terra e os animais. Ele é forte e resistente, com habilidades práticas de sobrevivência.</p>
+            
+            </div>
+            <div class="col">
+            
+            <h4 class="mb-0">Ladrão</h4>
+            <p>Profissão</p>
+            <p>Hábil em furtos e escapadas, o Ladrão é astuto e ágil. Ele vive à margem da lei, mas possui um código próprio de ética.</p>
+            
+            <h4 class="mb-0">Linguista</h4>
+            <p>Profissão</p>
+            <p>Especializado em línguas e comunicação, o Linguista possui vasto conhecimento sobre idiomas antigos e modernos. Escolha cinco línguas da tabela de Idiomas para aprender.</p>
+            
+            <h4 class="mb-0">Malandro</h4>
+            <p>Antecedente</p>
+            <p>Crescido nas ruas, o Malandro é astuto e adaptável. Ele aprendeu a sobreviver em um ambiente hostil e possui habilidades de furtividade e improvisação.</p>
+            
+            <h4 class="mb-0">Mente Afiada</h4>
+            <p>Característica</p>
+            <p>Cabeção</p>
+            
+            <h4 class="mb-0">Mercador</h4>
+            <p>Profissão</p>
+            <p>O Mercador é astuto e persuasivo, sempre em busca de oportunidades para lucrar. Ele tem uma vasta rede de contatos e é habilidoso em negociações.</p>
+            
+            <h4 class="mb-0">Nobre</h4>
+            <p>Antecedente</p>
+            <p>Nascido em uma família de prestígio, o Nobre é educado e possui habilidades sociais refinadas. Ele tem acesso a recursos e influência, mas pode ser visto como arrogante por outros.</p>
+            
+            <h4 class="mb-0">Soldado</h4>
+            <p>Profissão</p>
+            <p>Treinado para a guerra, o Soldado é disciplinado e leal. Ele possui habilidades de combate e estratégia, e é respeitado por sua bravura.</p>
+            
+            
+        </div>
+    </div>
+    
+
+    <h2 id="atributos-e-pericias" class="mt-2">Atributos e Pericias</h2>
+    <hr>
+    <table class="table table-bordered align-middle">
+        <tbody>
+            <tr>
+                <td class="text-center" colspan="3"><b>Mundo das Ideias</b></td>
+            </tr>
+            <tr>
+                <td rowspan="6">Mente</td>
+                <td>Inteligência</td>
+                <td>Desafios lógicos, Cálculos Matemáticos</td>
+            </tr>
+            <tr>
+                <td>Criptografia</td>
+                <td>Resolver quebra-cabeças, Relacionar Pensamentos soltos, Aprender Linguagens novas ou
+                    entender sotaques e variantes de uma já conhecida,</td>
+            </tr>
+            <tr>
+                <td>Conceito</td>
+                <td>Compreender o abstrato, Compreender conceitos complexos, Compreender Arte, Compreender
+                    Filosofia, Compreender Valor Monetário,</td>
+            </tr>
+            <tr>
+                <td>Criatividade</td>
+                <td>Pensar em solução de problemas</td>
+            </tr>
+            <tr>
+                <td>Conhecimento</td>
+                <td>Recordar História, Experiência Profissional, Cultura local</td>
+            </tr>
+            <tr>
+                <td>Engenharia</td>
+                <td>Habilidades com Ferramentas e Armas, Inteligência Espacial</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Persona</td>
+                <td>Lábia</td>
+                <td>Persuasão, Dramatização, Dissimulação</td>
+            </tr>
+            <tr>
+                <td>Glamour</td>
+                <td>Charme, Sedução, Beleza, Atração</td>
+            </tr>
+            <tr>
+                <td>Empatia</td>
+                <td>Compreensão interpessoal, Compreensão com animais</td>
+            </tr>
+            <tr>
+                <td>Atitude</td>
+                <td>Intimidação, Ocultação da presença</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Presença</td>
+                <td>Vontade</td>
+                <td>Devoção, Fé, Coragem, Determinação, Exceder Limites Físicos e Espirituais</td>
+            </tr>
+            <tr>
+                <td>Arcanismo</td>
+                <td>Sentir energias, afinidade com o místico</td>
+            </tr>
+            <tr>
+                <td>Sobrenatural</td>
+                <td>Sexto sentido, afinidade com o pós-vida</td>
+            </tr>
+            <tr>
+                <td>Compostura</td>
+                <td>Equilíbrio, Firmeza intra-pessoal, Coragem, Autodomínio, Resiliência, Resistir a vícios,
+                    Resistir a tentações, Resistir a influências externas</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Sentido</td>
+                <td>Intuição</td>
+                <td>Instinto, Leitura de micro expressões corporais, Leitura do ambiente, captar intenções,
+                    Sentido Aranha</td>
+            </tr>
+            <tr>
+                <td>Coordenação</td>
+                <td>Coordenação Óculo Manual, Combate corpo a corpo, Artes marciais, Direção de veículos, Jogar
+                    Video-games</td>
+            </tr>
+            <tr>
+                <td>Percepção</td>
+                <td>Visão, Audição, Olfato, Paladar</td>
+            </tr>
+            <tr>
+                <td>Tato</td>
+                <td>Prestidigitação, Analisar com o toque</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Corpo</td>
+                <td>Agilidade</td>
+                <td>Velocidade de movimento, Inteligência corporal</td>
+            </tr>
+            <tr>
+                <td>Força</td>
+                <td>Força física, Potência, Músculo</td>
+            </tr>
+            <tr>
+                <td>Vigor</td>
+                <td>Saúde, Regeneração de vida, Metabolismo</td>
+            </tr>
+            <tr>
+                <td>Tenacidade</td>
+                <td>Resistência a Doenças, Resistência a Danos Externos</td>
+            </tr>
+            <tr>
+                <td class="text-center" colspan="3"><b>Mundo Material</b></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>A tabela de Atributos e Perícias lista as habilidades e propriedades que uma criatura possui, tanto no
+        âmbito mental quanto no físico e em todo o espectro presente entre eles.</p>
+    <p>Cada Atributo está relacionado a uma área do indivíduo e representa sua habilidade em tal área de forma
+        generalista.</p>
+    <p>Cada Perícia envolve um conjunto de palavras-chave que remetem os desafios mais específicos que elas
+        devem ser utilizadas.</p>
+
+    <h5><b>Mente</b></h5>
+    <p>Receba modificadores igual a quantidade de atributos em mente para aprender feitiços e conjurar feitiços.</p>
+
+    <h5><b>Persona</b></h5>
+    <p>Ao upar um atributo em Persona</p>
+
+    <h5><b>Presença</b></h5>
+    <p>Para cada ponto em Presença, aumente seus Pontos de Ação máximo em +1.
+    </p>
+
+    <h5><b>Sentido</b></h5>
+    <p>Ao rolar iniciativa, adicione um bônus de +3 para cada ponto em Sentido.</p>
+    <p>Ao Proteger-se, receba modificadores igual a quantidade de atributos em Sentido. </p>
+
+    <h5><b>Corpo</b></h5>
+    <p>Para cada ponto em Corpo, aumente seus PV em +3.</p>
+
+
+    <h2 id="teste-de-pericia" class="mt-2">Teste de Perícia</h2>
+    <hr>
+    <p>Para realizar certas Ações que representem um desafio, por menor que ele seja, é necessário realizar um
+        Teste de Perícia para determinar seu sucesso, sendo esse um Desafio comum ou um Embate. Um Teste de
+        Perícia sempre requer a soma de duas Perícias distintas, podendo haver
+        modificadores oriundos de Itens, Bênçãos, Maldiçoes, Efeitos de Terreno ou outras fontes:</p>
+    <p class="text-center"><b>Resultado = Dado + Atributo<sub>1</sub> + Pericia<sub>1</sub> + Dado +
+            Atributo<sub>2</sub> + Pericia<sub>2</sub> + Modificadores</b>
+    </p>
+    <p>As combinações de perícias utilizadas nos testes são determinadas na descrição de cada Ação, sendo
+        ilustrada a exigência na descrição da ação, com um símbolo de + (mais).</p>
+    <p>Se uma Ação não estiver uma prevista neste livro e haver duvida sobre as Pericias a serem utilizadas,
+        elas serão escolhidas pelo Narrador.</p>
+    <h3>Modificadores</h3>
+    <p>Os modificadores representam fatores extra-personagem no momento de um Teste.</p>
+    <p>Equipamentos, ferramentas, bênçãos ou outros fatores podem gerar modificadores positivos, auxiliando o
+        personagem a realizar a ação desejada com melhores resultados.</p>
+    <p>Doenças, machucados, maldições, condições ou outros fatores ja geram o resultado oposto, prejudicando o
+        personagem a realizar as ações desejadas com sucesso.</p>
+    <p>Os desafios que utilizam a lista de Nível de Dificuldade são aqueles que não disputam contra as perícias
+        de outra criatura, sendo sua dificuldade determinada pelo Narrador. Levantar um objeto muito pesado,
+        Tentar manter-se imóvel ou Decifrar um pergaminho são desafios que dependem apenas da perícia da
+        criatura para seu sucesso, então utilizam o Nível de Dificuldade para determinar a dificuldade.</p>
+    <h5>Níveis de Dificuldade</h5>
+    <table class="table table-bordered ">
+        <thead>
+            <tr>
+                <th>Dificuldade</th>
+                <th>Resultado</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td>Sucesso Automático</td>
+                <td>6 em ambos os dados</td>
+                <td>A Sorte alinhou os caminhos para seu sucesso. O resultado do teste gera um sucesso automático no teste e talvez de mais vantagens do que previsto.</td>
+            </tr>
+            <tr>
+                <td>Falha Automática</td>
+                <td>1 em ambos os dados</td>
+                <td>A Sorte não estava ao seu lado. O resultado do Teste pode gerar uma falha ou uma
+                    consequência desastrosa, cabe ao Narrador a melhor interpretação.</td>
+            </tr>
+            <tr>
+                <td>Rotineira</td>
+                <td>7</td>
+                <td>Tarefa trivial.Nivel de dificuldade minimo, mas requer atenção..</td>
+            </tr>
+            <tr>
+                <td>Fácil</td>
+                <td>9</td>
+                <td>Exige um pouco de preparo, mas pode ser realizado por um iniciante no assunto.</td>
+            </tr>
+            <tr>
+                <td>Mediana</td>
+                <td>11</td>
+                <td>Testa habilidades medianas.</td>
+            </tr>
+            <tr>
+                <td>Desafiadora</td>
+                <td>13</td>
+                <td>Um obstáculo notável, exige talento real.</td>
+            </tr>
+            <tr>
+                <td>Difícil</td>
+                <td>18</td>
+                <td>Uma tarefa complicada.</td>
+            </tr>
+            <tr>
+                <td>Muito Difícil</td>
+                <td>21</td>
+                <td>Para especialistas ou sorte excepcional.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <p>“Vocês são pegos de surpresa pelo terremoto. Todos façam um teste de Compostura com Agilidade para
+        manterem o equilíbrio e não caírem no chão.”</p>
+    <p>“No pedaço de papel você vê um texto escrito a caneta. Letras e símbolos, se misturam formando um texto
+        criptografado. Para tentar decifrar até o amanhecer, role um teste de Criptografia mais Criatividade.
+    </p>
+    <h4>Embate</h4>
+    <p>Um Embate ocorre quando uma Ação é declarada, mas seu resultado encontra resistência de outra criatura,
+        seja ela um personagem do Narrador ou de outro Jogador, assim, as duas criaturas rolam um Teste de
+        Perícia, quem possuir o resultado maior vence o embate, realizando com sucesso sua ação ou resistindo a
+        ação da outra criatura.</p>
+        <p>Em caso de empate, ganha quem estiver realizando ativamente a ação, ou seja, quem realiza o ataque ganha de quem esta defendendo, assim como quem procura um objeto em um comodo acha de quem o escondeu.</p>
+    <p>“Quero domar este cavalo selvagem.”</p>
+    <p>“Ok, faça um teste de Empatia e Compostura. O cavalo vai tentar resistir com Vontade e Compostura.”</p>
+
+
+    <h2 id="acoes">Ações</h2>
+    <hr>
+    <p>Um personagem esta a todo momento realizando ações, movendo-se, percebendo o ambiente, lutando, prendendo.
+        Algumas dessas
+        ações representam um nível de desafio alto e precisa passar por um Teste de Pericia para medir o quão bem a ação
+        foi
+        realizada. Criaturas podem realizar ações que não estão previstas nessas opções. Habilidades podem
+        oferecem outras alternativas de ação adicionais e você pode improvisar outras. Quando uma ação não esta
+        prevista no manual, o Narrador decide se a ação é viável e quais pericias devem ser usadas nos testes.
+    </p>
+
+    <h5>Ajudar</h5>
+    <p>Você pode ajuda uma criatura a realizar uma ação. Descreva como você poderia ajudar no teste, se a descrição for
+        coerente faça o
+        mesmo Teste de Pericia utilizado pela Criatura ajudada, ela pode escolher substituir o resultado dos
+        seus dados pelos dela. A criatura ajudada escolhe se utiliza o modificador bônus dela ou seu.</p>
+
+    <h5>Consumir Item</h5>
+    <p>Itens consumíveis são aqueles que só podem ser usado uma determinado numero de vezes antes de perder seu
+        propósito inicial.</p>
+    <p>Uma poção de cura, após bebida, deixa para trás apenas o frasco vazio. Um amuleto de proteção pode ter seu efeito
+        ativado apenas algumas vezes antes de perder seu encanto e se tornar um simples ornamento.</p>
+
+    <h5>Entrar em Pose</h5>
+    <p>Entrar em pose quer dizer que você se preparou para uma situação ou esta preparado para reagir a um
+        evento. Enquanto alguém esta em uma pose, pode por exemplo, receber modificadores positivos em
+        determinados testes ou preparar uma reação especifica da pose a um evento descrito nela.</p>
+    <p>Uma pose é desfeita quando o personagem entra em uma nova pose ou se movimenta. Apenas uma Pose pode
+        permanecer por vez.</p>
+
+    <h5>Reação</h5>
+    <p>Uma Reação é uma ação que pode ser realizada fora do seu turno, em resposta a um evento específico.
+       Quando você declara uma Reação, ela é colocada em uma fila de execução. As Reações são resolvidas em ordem inversa à declaração:
+       a última Reação declarada é executada primeiro, e a primeira declarada é executada por último. Isso cria um efeito em cascata onde
+       ações posteriores podem interferir ou anular ações anteriores. Por exemplo, se um ataque é realizado e três personagens declaram
+       Reações para intervir, a terceira Reação declarada será resolvida primeiro, podendo alterar ou bloquear o alvo antes que a segunda 
+       e primeira Reações sejam executadas.</p>
+
+    <h5>Mover</h5>
+    <p>Uma criatura pode se mover em um turno uma distância igual sua <b>velocidade de movimentação</b>.</p>
+
+    <p>Em caso de varias Ações serem declaradas sequencialmente no mesmo Turno, a ultima Ação declarada é
+        realizada primeiro. Por exemplo, se um golpe é realizado e três jogadores declaram que querem intervir no
+        ataque, seja utilizando escudos, feitiços ou outros ataques, aquele que declarou o movimento primeiro, sera o
+        primeiro a ter ele realizado.</p>
+
+    <h5>Conjuração</h5>
+    <p><b>Conjuração</b> é uma ação que permite lançar um <b>Feitiço</b> através do conhecimento de seu personagem ou de
+        objetos
+        mágicos como pergaminhos e itens encantados.</p>
+    <p>Para conjurar um feitiço, você deve entrar em uma <b>Pose de Conjuração</b>. Enquanto estiver nesta pose, você
+        está canalizando a magia necessária para lançar o feitiço e deve mantê-la pelo tempo descrito na descrição do
+        feitiço. Se a Pose de Conjuração for interrompida antes de você terminar a conjuração, o feitiço falha
+        automaticamente.</p>
+    <p>Se um feitiço descrever uma postura específica, como "aponte os dois braços para frente com as palmas abertas" ou
+        "junte as mãos em pose de oração", tente realizá-la. Se não conseguir porque seus braços estão amarrados ou é
+        impossível juntar as mãos, você não poderá conjurar. No entanto, deficiências físicas não impedem a conjuração,
+        pois a magia reside na intenção.</p>
+    <p>Feitiços pede componente <b>Material</b> precisam dos ingredientes descritos para serem conjurados. Todos os
+        materiais necessários serão consumidos no início da conjuração. Se o feitiço estiver em um Pergaminho, este
+        também será consumido como material.</p>
+    <p>Feitiços com componente <b>Verbal</b> são expressivos. Se deseja o dano máximo, grite. Se deseja sutileza ou dano
+        não letal, sussurre. A impossibilidade de falar impede a conjuração.</p>
+    <p>Feitiços com componente <b>Foco</b> precisam de um objeto específico para iniciar a conjuração, mencionado na
+        descrição do feitiço. O foco não é consumido. Ele pode ser um medalhão, um cajado ou uma espada.</p>
+
+    <h3>Movimentação, Distância Absoluta e Distância Relativa</h3>
+    <p>A movimentação representa a capacidade de uma criatura de se deslocar. No seu turno, você pode se move a uma distância igual a sua Velocidade de Movimento.
+         Mover não consome ◆, permitindo que o personagem combine deslocamento com outras ações em seu turno.</p>
+    <p> Durante a movimentação, você pode atravessar o espaço de um aliado.
+        Você não pode encerrar sua movimentação em um espaço ocupado por outra criatura.</p>
+    <h5>Distância Absoluta</h5>
+    <p>O combate narrado com Distância Absoluta, utiliza os valores presentes na ficha das criaturas e da
+        descrição das ações para medir distancias e calcular a movimentação. Este tipo de combate precisa de um
+        campo de batalha com as marcações das distancias, marcadores, representando personagens, obstáculos,
+        objetos e réguas, para medir a distância de disparos de projeteis e área de efeito de explosões e
+        feitiços.</p>
+    <h5>Distância Relativa</h5>
+    <p>Em vez de medir cada metro exato durante o combate, utiliza-se o conceito de Distância Relativa para
+        simplificar o combate e não ficar preso ao campo de batalha e aos marcadores. Para essa distância,
+        defini-se que um corredor mediano alcance 30 metros de movimentação em um turno. Essa criatura não
+        possui bônus ou bênçãos que ajudem ela a correr distâncias maiores. As tipos são:</p>
+    <ul>
+        <li><b>Corpo a Corpo/Ao seu lado:</b> Adjacente. Alcance de toque e ataques corpo a corpo. 5 metros ou menos,
+            aproximadamente.</li>
+        <li><b>Perto:</b> Próximo, mas não a distância de toque ou ataques corpo a corpo. Possível alcançar com uma
+            movimentação curta.</li>
+        <li><b>Longe:</b> Distância que exige uma movimentação completa de um corredor mediano para alcançar. Entre 25 a
+            35 metros, aproximadamente.</li>
+        <li><b>Muito Longe:</b> Distância em que não é possível alcançar em um turno de um corredor mediano, utilizando
+            a movimentação completa.</li>
+        <li><b>Fora de Alcance:</b> Distância que exige múltiplas ações de movimento para alcançar.</li>
+    </ul>
+    <h5>Tipos de Movimentação, Penalização de Movimentação e Terreno Difícil</h5>
+    <p>Seu movimento pode ser feito de outras formas como escalar, nadar, rastejar, entre outras formas para se
+        locomover, essa movimentação alterada não é tão eficiente quando a movimentação padrão, resultando em uma
+        Penalização de Movimentação quando utilizados. O mesmo ocorre quando um personagem tenta se locomover por um
+        Terreno Difícil. Entulhos, escadas íngremes, tetos baixos, neve, pântanos rasos e vegetação densa são exemplos
+        de terrenos difíceis.</p>
+    <p>Cada metro deslocado quando um criatura sofre Penalização de Movimentação, custa o dobro da distância
+        percorrida. A penalização de Movimentação não se acumula.</p>
+
+
+    <h2 id="combate">Combate</h2>
+    <hr>
+    <p>O combate é o uma instancia especial em que criaturas entram em confronto direto. Durante o combate, as regras de
+        rodadas, turnos e ações são aplicadas para organizar as decisões e ações de cada participante.</p>
+
+    <h5>Atacar</h5>
+    <p>Um ataque segue a seguinte estrutura:</p>
+    <ul>
+        <li>Escolha um alvo dentro da distância do seu ataque, podendo ser uma criatura, objeto
+            ou local.</li>
+        <li>Realize um Embate, em caso de vitória ou empate, você aplica o dano e os efeitos especiais do ataque.</li>
+        <li>Em caso de um acerto critico, o Embate é ganho automaticamente pelo atacante, o dano é dobrado e ignora reduções (como de armadura).</li>
+    </ul>
+    <p>Se você não possuir armas equipadas e realizar um ataque, utilizará os punhos.</p>
+
+    <h3>Rodada, Turnos e Fases</h3>
+    <p>O combate acontece em ciclos de Rodadas e Turnos. Cada rodada corresponde a aproximadamente 6 segundos do
+        jogo, e em cada Rodada, uma criatura no combate realiza seu turno. Quando todos os turnos terminarem, uma
+        nova Rodada se inicia ate a batalha cessar.</p>
+    <p>Um Turno é composto por Fases. As Fases servem para engatilhar eventos</p>
+    <ul>
+        <li><b>Fase Inicial</b>: São acionados os eventos que mencionam "no inicio do turno".</li>
+        <li><b>Fase de Ação</b>: Momento em que o personagem pode realizar Ações e usar sua Movimentação.</li>
+        <li><b>Fase Final</b>: São acionados os eventos que mencionam "no fim do turno".</li>
+    </ul>
+
+    <h3>Ordem de Ação</h3>
+    <p>A ordem dos Turnos é determinada no início do combate, as criaturas com mais pontos em sentidos agem primeiro. Em
+        caso de empate, o Narrador decide a ordem entre os empatados.</p>
+    <h3>Ponto de Ação</h3>
+    <p>Pontos de Ação são representados por ◆. Pontos de Ação representam o tempo consumido para realizar uma Ação
+        dentro de um Turno enquanto estão
+        em Combate.</p>
+    <p>Ações, possuem em sua descrição o custo necessário para ser utilizados quando em Combate.</p>
+    <p>Ao inicio do turno de cada criatura, todos os ◆ remanescentes dela são descartados e então
+        recupera-se ◆ igual seu limite máximo.</p>
+    <p>Ações, com exceção de Conjurações, acumulam ◆ investidos, ou seja, se a Ação de Arrombar
+        Fechadura precisar de 10◆ para ser realizada e você possui apenas 5◆ a cada
+        turno, em um Turno você pode
+        gastar 5◆ para realizar a ação, no turno seguinte atacar e por fim, no
+        ultimo turno, gastar mais 5◆
+        completar o arrombamento.</p>
+    <h3>Ações Livres e Outras Ações</h3>
+    <p>Ações Livres não necessitam de ◆ para serem realizadas podem ser feita enquanto a criatura realiza uma ação,
+        como
+        atacar.</p>
+    <p>Exemplo de ações livres são:</p>
+    <h5>Falar</h5>
+    <p>Durante o combate, você pode se comunicar brevemente com outra criatura através de diálogos ou gestos.
+    </p>
+    <h5>Golpe desarmado</h5>
+    <b>Atacar</b> - 5 metros<p>◆◆: Cause 2 de dano Contundente.</p>
+    <h5>Proteger-se</h5>
+    <p>Se você não possuir um escudo equipado e quiser se proteger, você pode entrar em pose de Esquiva.</p>
+    <b>Esquivar</b>
+    <p>◆◆: Entre em pose de Esquiva. O próximo Ataque que você sofrer recebera -5 e esta pose é desfeita.</p>
+    <h5>Preparar-se</h5>
+    <p>Você pode transformar uma Ação em uma Reação.</p><b>Preparar</b>
+    <p>Declare uma Ação, pague seu custo necessário e descreva um evento para desencadear a realização esta Ação. Entre
+        em pose de Preparado, enquanto estiver nesta pose e quando o evento descrito ocorrer, realize a Ação.</p>
+    <h5>Equipamento</h5>
+    <b>Desequipar equipamento</b>
+    <p>◆: Guarde o na bolsa ou deixe-o no chão a 5 metros e você.</p>
+    <h5>Interagir com objetos</h5>
+    <p>Você pode interagir com um objetos ou elementos do ambiente. Se na descrição do objeto não houver um custo para
+        realizar a ação desejada, gaste ◆ para realizar a ação.</p>
+    <h5>Agachar/Se jogar</h5>
+    <p>Você pode se agachar ou se jogar no chão para se proteger de ataques, ou para se esconder.</p>
+
+
+    <h2 id="equipamentos">Equipamentos</h2>
+    <hr>
+    
+    <div class="row">
+        <div class="col">
+            <p>
+                Texto:
+            </p>
+            <ul>
+                <li>Capacete</li>
+                <li>Armadura</li>
+                <li>Luva direita </li>
+                <li>Luva esquerda</li>
+                <li>Botas</li>
+                <li>Arma Mão Direita</li>
+                <li>Arma Mão Esquerda</li>
+                <li>Arma Duas Mãos</li>
+                <li>No máximo um colar mágico ativo</li>
+                <li>No máximo um anel mágico ativo para cada mão</li>
+            </ul>
+        </div>
+        <div class="col">
+            <img alt="Logotipo Palácio Caravana Livro Base" src="./static/img/LDM/equipamento.png" style="max-width:10cm;max-height:10cm;width:auto;height:auto">
+        </div>
+    </div>
+    <p>Armas definem o tipo de dano e a forma como o personagem vai atacar, armaduras e escudos reduzem o dano recebido
+        e outros equipamentos oferecem vantagens aos personagens durante as aventuras.</p>
+    <p>As raridades de um item são:</p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Raridade</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Comum</td>
+                <td>Encontrado facilmente em uma aventura, amplamente encontrados no mundo, de fabricação simples ou
+                    produzidos em massa.</td>
+            </tr>
+            <tr>
+                <td>Incomum</td>
+                <td>Itens um pouco mais difíceis de encontrar, geralmente exigem materiais melhores ou algum nível de
+                    conhecimento especializado para criar.</td>
+            </tr>
+            <tr>
+                <td>Raro</td>
+                <td>Itens de grande valor e poder, muitas vezes com origens mágicas, tecnológicas ou lendárias.</td>
+            </tr>
+            <tr>
+                <td>Lendário</td>
+                <td>Artefatos únicos, cercados de histórias, tendo sua origem em eventos extraordinários.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h4>Corpo a Corpo</h4>
+    <hr>
+    <div class="row">
+        <div class="col">
+            
+            
+            <h5>Espada</h5>
+            <p>Espada - Comum - 1 mão</p>
+            
+            
+            <p>
+                <b>Atacar</b> - 5 metros<br>
+                 ◆◆◆: Cause 5 de dano Cortante.
+            </p>
+            
+            
+            
+            
+            <h5>Lança</h5>
+            <p>Lança - Comum - 2 mãos</p>
+            
+            
+            <p>
+                <b>Atacar</b> - 15 metros<br>
+                 ◆◆◆: Cause 5 de dano Perfurante.
+            </p>
+            
+            
+            
+            </div>
+            <div class="col">
+            
+            
+            <h5>Martelo</h5>
+            <p>Martelo - Comum - 1 mão</p>
+            
+            
+            <p>
+                <b>Atacar</b> - 5 metros<br>
+                 ◆◆◆: Cause 4 de dano Contundente. Se a diferença entre os embate for 5 ou maior, o alvo recebe Atordoado ate o fim do turno dele.
+            </p>
+            
+            
+            
+            
+            <h5>Rapieira</h5>
+            <p>Espada - Comum - 1 mão</p>
+            <p>Uma espada leve e afiada, ideal para ataques rápidos e precisos.</p>
+            <p>O ataque com esta arma tambem é critico se o resultado do teste de ataque for 11.</p>
+            <p>
+                <b>Atacar</b> - 5 metros<br>
+                 ◆◆: Cause 3 de dano Perfurante.
+            </p>
+            
+            
+            
+            
+        </div>
+        <h5>A Distância</h5>
+        <hr>
+        <div class="col">
+            
+            
+            <h5>Arco</h5>
+            <p>Arco - Comum - 
+                2 mãos</p>
+            
+            <p>
+                <b>Atacar</b> - 30 metros<br>
+                 ◆◆◆,  1 Flecha:Cause 5 de dano Perfurante.
+            </p>
+            
+            
+            
+            </div>
+            <div class="col">
+            
+            
+            <h5>Besta</h5>
+            <p>Besta - Comum - 
+                1 mão</p>
+            
+            <p>
+                <b>Carregar Dardo</b><br>
+                 ◆◆◆,  1 Dardo:Carregue o dardo na besta. Seu dardo se torna um Dardo Carregado. So pode haver um dardo carregado por besta.
+            </p>
+            
+            <p>
+                <b>Atacar</b> - 60 metros<br>
+                 ◆◆◆,  1 Dardo Carregado:Cause 7 de dano Perfurante.
+            </p>
+            
+            
+            
+            
+        </div>
+        <h5>Vestimenta</h5>
+        <hr>
+        <div class="col">
+            
+            
+            <h5>Armadura de Couro</h5>
+            <p>Armadura - Comum</p>
+            <p>None</p>
+             <p>Reduz o dano perfurante, cortante e contundente sofrido em 2.</p>
+            
+            
+            
+            <h5>Armadura de Ferro</h5>
+            <p>Armadura - Comum</p>
+            <p>Reduz o dano perfurante, cortante e contundente sofrido em 3.</p>
+             
+            
+            
+            </div>
+            <div class="col">
+            <h5>Escudo Pequeno</h5>
+            <p>Escudo - Comum</p>
+            <p>Escudo pequeno e leve feito de madeira. Ideal para aparar golpes sem perder velocidade.</p>
+             
+            
+            <p>
+                <b>Defender</b><br>
+                 ◆◆:
+                Entre em Pose Defensiva, +5 em Testes de Pericia quem envolvam Ataques contra você.
+            </p>
+            
+            
+            
+        </div>
+        <h5>Consumíveis</h5>
+        <hr>
+        <div class="col">
+            
+            
+            <h5>Fogo Vivo</h5>
+            <p>Consumível - Comum </p>
+            <p>Um frasco de vidro espesso contendo um liquido verde opaco florescente de cheiro forte.</p>
+            
+            <p>
+                <b>Arremessar</b> - 30 metros<br>
+                 ◆◆:
+                O frasco se rompe e explode ao contato. A um raio de 10 metros do ponto de impacto criaturas sofrem 10 de dano Ígneo e objetos inflamáveis são incendiados.
+            </p>
+            
+            <figcaption class="blockquote-footer">"Antes de arremessar o frasco você consegue sentir ele vibrando de felicidade."</figcaption>
+            
+            <h5>Poção Abraço Caloroso</h5>
+            <p>Consumível - Comum </p>
+            <p></p>
+            
+            <p>
+                <b>Consumir</b><br>
+                 ◆◆:
+                Receba Resistência a Gélido por 1 hora.
+            </p>
+            
+            
+            </div><div class="col">
+            <h5>Poção de Cura</h5>
+            <p>Consumível - Comum </p>
+            <p></p>
+            
+            <p>
+                <b>Consumir</b><br>
+                 ◆◆:
+                Recupere 5 Pontos de Vida
+            </p>
+            
+            
+            
+            <h5>Poção de Resistência a Fogo</h5>
+            <p>Consumível - Comum </p>
+            <p></p>
+            
+            <p>
+                <b>Consumir</b><br>
+                 ◆◆:
+                Receba Resistência a Fogo por 1 hora.
+            </p>
+            
+            
+            
+        </div>
+        <h5>Artefatos</h5>
+        <hr>
+        <div class="col">
+            
+            
+        </div>
+    </div>
+    
+
+    <h2 id="glifos">Glifos</h2>
+    <hr>
+    <p>Equipamentos e artefatos podem ser encantados com Glifos. Glifos possuem efeitos diversos. Um item pode possuir
+        uma quantidade de Glifos até igual a quantidade máxima de espaços de Glifos que aquele item possuí.</p>
+    
+    
+
+    <h2 id="materiais">Materiais</h2>
+    <hr>
+    <p>Os materiais são substâncias usadas para criar equipamentos, armas e outros itens no mundo de Elysium. Eles podem variar em raridade, propriedades e utilidade.</p>
+    <div class="row">
+        
+        <div class="col">
+            
+            <h4>Camoliaz</h4>
+            <p>Vegetal - Comum</p>
+            <p>A Camoliaz é uma planta comum encontrada em várias regiões, conhecida por suas folhas largas e flores vibrantes. É frequentemente utilizada em chás e remédios naturais devido às suas propriedades calmantes.</p>
+            
+            <h4>Erva Sangue de Dragão</h4>
+            <p>Vegetal - Incomum</p>
+            <p>Planta rara com propriedades mágicas, usada em poções e encantamentos.</p>
+            </div><div class="col">
+            <h4>Pedra Caixão</h4>
+            <p>Mineral - Incomum</p>
+            <p>Cristal conhecido por sua coloração azul a verde-azulada, Pedra Caixão pode ser encontrada em restos mortais em decomposição.</p>
+            
+        </div>
+    </div>
+
+
+    <h2 id="habilidades">Habilidades</h2>
+    <hr>
+    <p>Habilidades são capacidades especiais que uma criatura pode possuir, representando talentos, poderes ou aptidões
+        únicas que a diferenciam das demais. Elas podem ser adquiridas por meio de treinamento, experiência, herança
+        genética ou eventos extraordinários. Habilidades podem influenciar diversos aspectos do jogo, desde o combate
+        até a interação social e a resolução de desafios.</p>
+    
+    
+    <h4>Calmaria antes da Tempestade</h4>
+    <p>◆◆: Entre na pose Plenitude e finalize seu turno, esta pose é desfeita se você usar uma ação. Após o inicio de seu próximo turno, quando Plenitude é desfeita receba ◆◆◆. Estes pontos de ação não contam para seu limite máximo.</p>
+    
+    
+    <h4>Faro Aguçado</h4>
+    <p>Recebe +2 em testes de Percepção baseados em olfato.</p>
+    
+    
+    <h4>Flecha Dupla</h4>
+    <p>Quando você escolher uma Criatura Alvo para sofrer um Ataque com Arco, consuma um Projétil a mais para Atacar outra Criatura além da primeira. Utilize o mesmo resultado do Ataque para os dois Alvos.</p>
+    
+    
+    <h4>Levitação</h4>
+    <p>use sua movimentação para se mover verticalmente. Ao se tornar inconsciente, você cai no chão</p>
+    
+    
+    <h4>Planar</h4>
+    <p>Você pode desacelerar a velocidade de sua queda.</p>
+    
+    
+    <h4>Punhos Fortes</h4>
+    <p>Se sua última ação neste turno foi um Ataque Desarmado, seu próximo Ataque Desarmado se chama "Ataque Desarmado Direto" e causa o dobro do dano.</p>
+    <figcaption class="blockquote-footer">"Jab, direto."</figcaption>
+    
+    <h4>Punhos Ágeis</h4>
+    <p>Se sua última ação neste turno foi um Ataque Desarmado, seu próximo Ataque Desarmado custa ◆.</p>
+    
+    
+    <h4>Saque Rápido</h4>
+    <p>Se não possuir uma arma equipada, você pode equipar uma Arma Leve sem pagar seu custo de ação.</p>
+    
+    
+    <h4>Velocista</h4>
+    <p>Aumente a distância de movimentação em +10 metros.</p>
+    
+    
+    
+    
+
+    <h2 id="faccoes">Facções</h2>
+    <hr>
+    <p>
+        Como não tem emprego, as pessoas se aliam a facção
+    </p>
+    
+    
+    <h4>Academia de Artes Marciais</h4>
+    <p>mestres para compartilhar conhecimento, espaço para prática.</p>
+    
+    <h4>Academia de Magia</h4>
+    <p>Grandes bibliotecas de estudos, espaços e equipamentos para experimentação.</p>
+    
+    <h4>Bibliotecários</h4>
+    <p>historiadores.</p>
+    
+    <h4>Os Ciganos</h4>
+    <p>Conhecimento paranormal, passado de geração em geração através das historias de seu povo.</p>
+    
+    <h4>Guilda dos Ladrões</h4>
+    <p>Eles produzem cofres, arrombam cofres, são furtivos e podem trabalhar como seguranças.</p>
+    
+    <h4>Sistema Unificado de Saúde</h4>
+    <p>acesso facilitado a tratamento de doenças, recursos para estudos .</p>
+    
+
+
+    <h2 id="criaturas">Criaturas</h2>
+    <hr>
+    
+    <div class="row">
+        <div class="col">
+            
+            <h4>Basilisco</h4>
+            
+            <p>None</p>
+            <p> -  - </p>
+             
+            
+            
+            
+            
+            <h4>Chocobo</h4>
+            <img
+                src="./static/img/LDM/chocobo-1.jpg" class="img-fluid">
+            <p>None</p>
+            <p> -  - </p>
+             
+            
+            
+            
+            
+            <h4>Dragão Vermelho</h4>
+            <img
+                src="./static/img/LDM/dragao-vermelho.jpg" class="img-fluid">
+            <p>None</p>
+            <p> -  - </p>
+             
+            
+            
+            
+            
+            <h4>Fênix</h4>
+            
+            <p></p>
+            <p> -  - </p>
+             
+            
+            
+            
+            
+            <h4>Grifo</h4>
+            
+            <p>None</p>
+            <p> -  - </p>
+             
+            
+            
+            
+            </div><div class="col">
+            <h4>Hidra</h4>
+            
+            <p></p>
+            <p> -  - </p>
+             
+            
+            
+            
+            
+            <h4>Humano</h4>
+            
+            <p>Humanos sao a raça mais abundante de todo o mundo.</p>
+            <p> -  - </p>
+             
+            
+            
+            
+            
+            <h4>Solidão</h4>
+            <img
+                src="./static/img/LDM/solidao-1.jpg" class="img-fluid">
+            <p>Só torna forma quando distante 500m de 2 criaturas ou mais.</p>
+            <p> -  - </p>
+             
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            
+            
+            <h4>Sutileza</h4>
+            <img
+                src="./static/img/LDM/sutileza-1.jpg" class="img-fluid">
+            <p>None</p>
+            <p> -  - </p>
+             
+            <p>Voo/Levitação</p>
+            <p></p>
+            <p>Forma da Água</p>
+            <p><p>Jogue um d6, essa criatura recebe os seguintes beneficios:</p></p>
+            
+            
+            <h4>Warawara</h4>
+            <img
+                src="./static/img/LDM/warawara-1.jpg" class="img-fluid">
+            <p>Os Warawara são criaturas que habitam as florestas densas e úmidas.</p>
+            <p>Warawara - Etéreo - </p>
+             
+            <p></p>
+            <p></p>
+            
+            
+            
+        </div>
+    </div>
+
+    
+    <h2 id="linguas">Língua</h2>
+    <hr>
+    
+    <div class="row">
+        <div class="col">
+            
+            <h4>Brimarin</h4>
+            <p>Língua dos Elfos. Delicada e fluida.</p>
+            
+            <h4>Cantare</h4>
+            <p>Língua falada pelo povo Lunare. Entoando vogais como canto, é extremamente difícil de ser falada por seres não Lunare, embora possa ser compreendida.</p>
+            
+            <h4>Comum</h4>
+            <p>Língua dos Orcs. Gutural e riapida.</p>
+            </div><div class="col">
+            <h4>Língua Secreta dos Gatos</h4>
+            <p>Língua dos Felix e Gatos. Usada em reunioes intimas. É um tabu ensinar a língua para outros pelo medo de terem sua segurança e seus segredos revelados. Não possui escrita.</p>
+            
+            <h4>Moroar</h4>
+            <p>Língua dos Orcs. Gutural e rispida.</p>
+            
+            <h4>Taka</h4>
+            <p>Língua dos Goblins. Simples, usa de muitas vogais e sons agudos.</p>
+            
+        </div>
+    </div>
+
+    <h2 id="tipos-de-dano">Tipos de Dano</h2>
+    <hr>
+    <p>Os tipos de dano representam as diferentes formas pelas quais uma criatura pode sofrer ferimentos ou efeitos
+        negativos durante o jogo. Cada tipo de dano pode interagir de maneira distinta com resistências,
+        vulnerabilidades e habilidades especiais das criaturas. Conhecer o tipo de dano causado por armas, magias ou
+        efeitos é fundamental para determinar o impacto de ataques e eventos no jogo.</p>
+    <p>Ataques ou eventos podem causar danos de vários tipos ao mesmo tempo. o dano final representa a soma de todo esse
+        dano realizado por um ataque ou evento.</p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="text-center">Supertipo</th>
+                <th>Descrição</th>
+                <th class="text-center">Tipo de Dano</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" class="text-center align-middle">Físico</td>
+                <td rowspan="3">Diminuido passivamente com proteções fisicas como armaduras. </td>
+                <td>Contundente</td>
+                <td>Queda, impacto, Esmagamento</td>
+            </tr>
+            <tr>
+                <td>Cortante</td>
+                <td>Afiado</td>
+            </tr>
+            <tr>
+                <td>Perfurante</td>
+                <td>Perfuração</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="text-center align-middle">Elemental</td>
+                <td rowspan="3">Mitigado de forma mais ativa. Precisa de energia para combater.</td>
+                <td>Elétrico</td>
+                <td>Eletricidade, Raios</td>
+            </tr>
+            <tr>
+                <td>Ígneo</td>
+                <td>Fogo, Calor</td>
+            </tr>
+            <tr>
+                <td>Radiante</td>
+                <td>Divino, Energia Celeste, Energia Extraterrena, Radioatividade</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="text-center align-middle"> </td>
+                <td rowspan="3"> </td>
+                <td>Corrosivo</td>
+                <td>Ácido</td>
+            </tr>
+            <tr>
+                <td>Psíquico</td>
+                <td>Afeta a psique do indivíduo, podendo ser causado por loucura, alucinações, apatia. Não deixe as
+                    portas de sua mente abertas, uma vez o inimigo dentro, é dificil de tirar.</td>
+            </tr>
+            <tr>
+                <td>Venenoso</td>
+                <td>Substância prejudicial ao indivíduo.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <h2 id="resistencias-e-imunidades">Resistências e Imunidades</h2>
+    <hr>
+    <p>Resistências representam a capacidade de uma criatura de suportar ou reduzir os efeitos negativos de certos tipos
+        de dano, condições ambientais ou efeitos mágicos. Uma criatura resistente pode ignorar, reduzir ou anular
+        penalidades e danos associados ao tipo de resistência que possui. Resistências podem ser adquiridas por meio de
+        espécies, habilidades, equipamentos ou efeitos mágicos.</p>
+    <p>Condições são estados que afetam as criaturas durante o jogo, alterando suas capacidades, ações ou sofrendo
+        efeitos negativos. Elas podem ser causadas por habilidades, magias, ataques, ambientes ou outros eventos. Cada
+        condição possui regras específicas que determinam como ela afeta a criatura e como pode ser removida.</p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Resistência</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Resistência a Calor</td>
+                <td>Recebe metade de dano Ígneo.</td>
+            </tr>
+            <tr>
+                <td>Resistência a Corrosão</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Resistência a Frio</td>
+                <td>Não sofre as penalidades de eventos que possuam a propriedade Frio.</td>
+            </tr>
+            <tr>
+                <td>Resistência a Radiante</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Carapaça X</td>
+                <td>Ao sofrer dano, ao invez de reduzir os PV da criatura, reduza os Pontos de Carapaça. Pontos de
+                    Carapaça são acumulativos e podem ser restaurados ate o valor maximo de X, quando ha o reparo do
+                    material ou criatura danificada.</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Imunidade</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Imunidade a Calor</td>
+                <td>Ignora o dano Ígneo.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <h2 id="condicoes">Condições</h2>
+    <p>Aqui estão algumas condições comuns. Condições que não estão presentes nesta lista, possuirão sua descrição mais
+        detalhada na descrição do evento que a produzem.</p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Condição</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Atordoado</td>
+                <td>A criatura atordoada possui dificuldade perceber o ambiente a sua volta e manter seus pensamentos
+                    coerentes.<br><br>Após realizar um Teste, jogue um d2, se o resultado for 1, receba -10 no resultado
+                    de testes realizados que envolvam perceber o ambiente a sua volta e manter pensamentos
+                    coerentes.<br><br>Ao final do turno da criatura, ela rola um d10</td>
+            </tr>
+            <tr>
+                <td>Cego</td>
+                <td>Uma criatura Cega não pode realizar ações que envolvam a visão e falham automaticamente em qualquer
+                    teste que envolva a visão.</td>
+            </tr>
+            <tr>
+                <td>Ensurdecido</td>
+                <td>Uma criatura Ensurdecida não pode realizar ações que envolvam a audição e falham automaticamente em
+                    qualquer teste que envolva a audição.</td>
+            </tr>
+            <tr>
+                <td>Inconsciente</td>
+                <td>Uma criatura Inconsciente é considerada Cega, Ensurdecida e Paralisada e recebe todos os efeitos
+                    dessas condições, além de não conseguir realizar ações.<br><br>Deixa cair o que quer que esteja
+                    segurando.<br><br>Ao participar de um embate, o resultado é automaticamente 0.</td>
+            </tr>
+            <tr>
+                <td>Paralisado</td>
+                <td>Uma criatura Paralisada não pode se movimentar, além de não poder realizar ações que envolvam a
+                    testes físicos e falham automaticamente em testes que envolvam testes físicos.</td>
+            </tr>
+            <tr>
+                <td>Sangrando</td>
+                <td>Ao final de seu turno, perca 5 PV e realize um Teste de Resistência + Vigor, se o
+                    resultado for maior que 5, esta condição é removida.</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2 id="feiticos">Feitiços</h2>
+    <hr>
+    <div class="row">
+        
+        <div class="col">
+            
+            
+            <h4>Contra-Feitiço</h4>
+            <p>Interrompa a conjuração de um feitiço.</p>
+            
+            <h4 class="mb-0">Finito</h4>
+            <h5 class="mt-1">Contra-Verbo</h5>
+            <p>Interrompa a conjuração de um feitiço que possua componente verbal.</p>
+            
+            <h4 class="mb-0">Frin Limitare</h4>
+            <h5 class="mt-1">Correntes Etéreas</h5>
+            <p>Escolha uma criatura. Você e ela realizam um Embate de vontade, determinação ou arcadismo. Se ela perder, correntes translúcidas e intangíveis ligam ela a você, impedindo que ela se desloque alem de 30 metros de você.</p>
+            
+            
+            <h4>Dança da Chuva</h4>
+            <p>None</p>
+            
+            
+            <h4>Estrelas Cadente</h4>
+            <p>None</p>
+            
+            <h4 class="mb-0">Atenem Flux</h4>
+            <h5 class="mt-1">Fluxo de Pensamento</h5>
+            <p>None</p>
+            
+            <h4 class="mb-0">Crucifa Expergite</h4>
+            <h5 class="mt-1">Julgamento Racial</h5>
+            <p>Escolha um tipo de criatura. Toda criatura que não seja do tipo escolhido dentro de um raio de 100 metros recebe um ferrão negro que flutua acima de sua cabeça. No início do turno de cada criatura, o ferrão realiza um Embate contra a criatura, se o ferrão ganhar, cause dano igual a vida restante da criatura.</p>
+            </div><div class="col">
+            <h4 class="mb-0">Leratia</h4>
+            <h5 class="mt-1">Ler Pensamentos</h5>
+            <p>Só funciona tocando na cabeça, perto do cérebro.</p>
+            
+            
+            <h4>Parede de Vento</h4>
+            <p>parede de vento do yasuo. Bloqueia projeteis. nao impede a passagem de criaturas e nem causa dano.</p>
+            
+            <h4 class="mb-0">Lebre Movitare</h4>
+            <h5 class="mt-1">Passos leves</h5>
+            <p>None</p>
+            
+            <h4 class="mb-0">Ig</h4>
+            <h5 class="mt-1">Pó de Brasa</h5>
+            <p>Pressione o material entre a palma das mãos. Ao fim da conjuração você obtêm Punhado de Pô de Brasa.</p>
+            
+            
+            <h4>Ritual da Fuligem</h4>
+            <p>None</p>
+            
+            
+            <h4>Visão Noturna</h4>
+            <p>None</p>
+            
+        </div>
+    </div>
+
+
+    <h2 class="text-center m-5" id="fim">Fim</h2>
+</main>
+
+    
+    
+<script src="./static/js/script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,11 @@
+nome: Escudo Pequeno
+tipo: Escudo
+raridade: Comum
+descricao: Escudo pequeno e leve feito de madeira. Ideal para aparar golpes sem perder velocidade.
+propriedade: [1 mão]
+acoes:
+  - nome: Defender
+    custos: [◆◆]
+    alcance:
+    descricao: Entre em Pose Defensiva, +5 em Testes de Pericia quem envolvam Ataques contra você.
+sabor: ''

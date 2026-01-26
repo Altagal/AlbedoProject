@@ -1,0 +1,14 @@
+nome: Rapieira
+tipo: Espada
+raridade: Comum
+propriedades: [1 mão]
+descricao: Uma espada leve e afiada, ideal para ataques rápidos e precisos.
+efeitos:
+ - nome: 
+   descricao: O ataque com esta arma tambem é critico se o resultado do teste de ataque for 11.
+acoes:
+- nome: Atacar
+  custos: [◆◆]
+  alcance: 5 metros
+  descricao: Cause 3 de dano Perfurante.
+sabor: 

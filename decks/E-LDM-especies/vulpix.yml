@@ -1,0 +1,9 @@
+nome: Vulpix
+tipos: [Humanoide]
+subtipos: [Animale]
+tamanhos: [Médio]
+descricao: Humanoide, cabeça de raposa, rabo peludo
+pv: 8
+movimentacao: 5
+tracos_raciais: 
+linguagens: []

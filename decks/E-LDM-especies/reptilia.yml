@@ -1,0 +1,12 @@
+nome: Reptilia
+tipos: [Humanoide, Réptil]
+subtipos: []
+tamanhos: [Médio]
+descricao:
+  Humanoide, características de lagarto, pele escamada, cabeça de réptil
+pv: 8
+movimentacao: 5
+tracos_raciais: 
+  - nome: "Folego"
+    descricao: Pode segurar o folego por mais tempo.
+linguagens: []

@@ -1,0 +1,6 @@
+nome: 
+verbal:
+materiais: []
+ritual: 
+descricao: 
+sabor:

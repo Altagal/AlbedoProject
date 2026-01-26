@@ -1,0 +1,11 @@
+nome: Anão
+tipos: [Humanoide]
+subtipos: []
+tamanhos: [Pequeno]
+descricao: Os anões são conhecidos por sua robustez.
+pv: 8
+movimentacao: 5
+tracos_raciais:  
+  - nome: Pele Grossa
+    descricao: Reduz em 2 o dano de ataques perfurantes e cortantes.
+linguagens: [Nuldul]

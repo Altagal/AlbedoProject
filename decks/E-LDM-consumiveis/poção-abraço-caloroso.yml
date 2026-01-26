@@ -1,0 +1,10 @@
+nome: Poção Abraço Caloroso
+tipo: Consumível
+raridade: Comum
+descricao: ''
+acoes:
+- custos:
+  - ◆◆
+  descricao: Receba Resistência a Gélido por 1 hora.
+  nome: Consumir
+propriedade: []

@@ -1,0 +1,12 @@
+nome: Lança
+tipo: Lança
+raridade: Comum
+propriedades: [2 mãos]
+descricao:
+efeitos:
+acoes:
+- nome: Atacar
+  custos: [◆◆◆]
+  alcance: 15 metros
+  descricao: Cause 5 de dano Perfurante.
+sabor: 

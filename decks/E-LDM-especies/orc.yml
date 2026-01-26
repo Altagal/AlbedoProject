@@ -1,0 +1,11 @@
+nome: Orc
+tipos: [Humanoide]
+subtipos: [Orc]
+tamanhos: [Médio, Grande]
+descricao:
+  Os orcs são conhecidos por sua força bruta, ferocidade em batalha e cultura
+  tribal.
+pv: 8
+movimentacao: 5
+tracos_raciais: 
+linguagens: [Moroar]

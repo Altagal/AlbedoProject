@@ -1,0 +1,12 @@
+nome: Espada
+tipo: Espada
+raridade: Comum
+propriedades: [1 mão]
+descricao: 
+efeitos: 
+acoes:
+- nome: Atacar
+  custos: [◆◆◆]
+  alcance: 5 metros
+  descricao: Cause 5 de dano Cortante.
+sabor: 

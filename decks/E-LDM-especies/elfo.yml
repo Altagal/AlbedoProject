@@ -1,0 +1,10 @@
+nome: Elfo
+tipos: [Humanoide]
+subtipos: [Elfo]
+tamanhos: [Médio]
+descricao: Os elfos são conhecidos por sua beleza, longevidade e conexão com a natureza.
+  Eles são habilidosos em magia e artesanato.
+pv: 8
+movimentacao: 5
+tracos_raciais: 
+linguagens: [Brinmarin]

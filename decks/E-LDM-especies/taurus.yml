@@ -1,0 +1,9 @@
+nome: Taurus
+tipos: [Humanoide]
+subtipos: [Animale]
+tamanhos: [Médio, Grande]
+descricao: Humanoide, Chifres na cabeça, grande, forte
+pv: 8
+movimentacao: 5
+tracos_raciais: 
+linguagens: []

@@ -1,0 +1,5 @@
+nome: Julgamento Racial
+verbal: Crucifa Expergite
+materiais: []
+ritual: false
+descricao: Escolha um tipo de criatura. Toda criatura que não seja do tipo escolhido dentro de um raio de 100 metros recebe um ferrão negro que flutua acima de sua cabeça. No início do turno de cada criatura, o ferrão realiza um Embate contra a criatura, se o ferrão ganhar, cause dano igual a vida restante da criatura.

@@ -1,0 +1,12 @@
+nome: Arco
+tipo: Arco
+raridade: Comum
+propriedades: [2 mãos]
+descricao: 
+efeitos:
+acoes:
+  - nome: Atacar
+    custos: [◆◆◆, 1 Flecha]
+    alcance: 30 metros
+    descricao: Cause 5 de dano Perfurante.
+sabor: 

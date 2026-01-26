@@ -1,0 +1,11 @@
+nome: Canis
+tipos: [Humanoide]
+subtipos: [Animale]
+tamanhos: [Médio]
+descricao: Humanoide, características de cachorro, rabo peludo, orelhas caídas
+pv: 8
+movimentacao: 5
+tracos_raciais: 
+  - nome: Faro Aguçado
+    descricao: Recebe Vantagem em testes que envolvam o olfato.
+linguagens: []

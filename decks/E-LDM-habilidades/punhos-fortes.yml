@@ -1,0 +1,6 @@
+nome: Punhos Fortes
+descricao:
+  Se sua última ação neste turno foi um Ataque Desarmado, seu próximo Ataque
+  Desarmado se chama "Ataque Desarmado Direto" e causa o dobro do dano.
+tipo: Habilidade
+sabor: '"Jab, direto."'
