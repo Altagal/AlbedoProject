@@ -10,4 +10,3 @@ movimentacao: 5
 tracos_raciais: 
   - nome: "Resistência a Calor"
     descricao: Recebe metade de dano Ígneo.
-linguagens: []

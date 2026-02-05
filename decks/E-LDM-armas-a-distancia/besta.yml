@@ -8,7 +8,7 @@ acoes:
   - nome: Carregar Dardo
     custos: [◆◆◆, 1 Dardo]
     alcance: 
-    descricao: Carregue o dardo na besta. Seu dardo se torna um Dardo Carregado. So pode haver um dardo carregado por besta.
+    descricao: Carregue o dardo na besta. Seu dardo se torna um Dardo Carregado. Só pode haver um dardo carregado por besta.
   - nome: Atacar
     custos: [◆◆◆, 1 Dardo Carregado]
     alcance: 60 metros

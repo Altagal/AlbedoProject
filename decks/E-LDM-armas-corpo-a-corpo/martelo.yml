@@ -8,5 +8,5 @@ acoes:
   - nome: Atacar
     custos: [◆◆◆]
     alcance: 5 metros
-    descricao: Cause 4 de dano Contundente. Se a diferença entre os embate for 5 ou maior, o alvo recebe Atordoado ate o fim do turno dele.
+    descricao: Cause 4 de dano Contundente. Se a diferença entre os embate for 5 ou maior, o alvo recebe Atordoado até o fim do turno dele.
 sabor: 

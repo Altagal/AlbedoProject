@@ -9,4 +9,3 @@ movimentacao: 5
 tracos_raciais: 
   - nome: "Folego"
     descricao: Pode segurar o folego por mais tempo.
-linguagens: []

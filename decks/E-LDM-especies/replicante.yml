@@ -7,6 +7,5 @@ movimentacao: 5
 descricao: Os replicantes são seres artificiais. Eles possuem características humanoides,
   mas são feitos de materiais inorgânicos como ferro, pedra ou madeira.
 tracos_raciais: 
-  - nome: "Composição Rigida"
-    descricao: Essa criatura possui Carapaça 16. Quando a Carapaça chegar a 0, a criatura fica Inconciente. Carapaça pode ser restaurada com o material compativel.
-linguagens: []
+  - nome: "Composição Rígida"
+    descricao: Essa criatura possui Carapaça 16. Quando a Carapaça chegar a 0, a criatura fica Inconsciente. Carapaça pode ser restaurada com o material compatível.
